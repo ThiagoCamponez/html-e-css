@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem de fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
+            height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
+        /* SHORTHAND para o código acima::
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;    pois o cover não funcionou no shorthand.. */
 
         main.bloco{
-            height: 100%;
             background-color: beige;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            width: 400px;
+            max-width: 400px;
             border: 1px solid black;
             border-radius: 10px;
             margin: auto;
             padding: 10px;
             text-align: center;
-            background-size: contain;
         }
     </style>
 </head>
