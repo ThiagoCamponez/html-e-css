@@ -4,3 +4,99 @@
     margin: 0;
     padding: 0;
 }
+
+header{
+    height: 13vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1{
+    padding: 20px;
+    height: 30px;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 60px 50px 0px 0px;
+    font-size: 1.3em;
+}
+
+a:hover{
+    display: flex;
+    color: blue;
+    text-decoration: none;
+    padding: 60px 50px 0px 0px;
+    font-size: 1.3em;
+}
+
+main{
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.banner img{
+    height: 400px;
+    width: 1200px;
+}
+
+.banner{
+	background-image: url('imagens/mercado_jb_g.png');
+    width: 1200px;
+	background-size: contain;
+	background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
+.produtos {
+	margin-top: 50px;
+}
+
+.produtos ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.produtos li {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	flex-basis: calc(33.33% - 20px);
+}
+
+.produtos img {
+	display: block;
+	margin: 0 auto;
+}
+
+.produtos h3 {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.produtos p {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.produtos span {
+	display: block;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
