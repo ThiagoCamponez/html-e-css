@@ -16,18 +16,17 @@
 .cabeçalho{
     display: flex;
     flex-direction: column;
-    color: white;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    color: black;
+    background-image: linear-gradient(to right, #f83600 0%, #fc8312 100%);
+    box-shadow: 1px 1px 8px black;
 }
 
 .cabeçalho h1{
     padding: 10px 0px 0px 25px;
     font-family: 'Diphylleia', serif;
     font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(175, 164, 164);
 }
 
 #menu-cabeçalho li{
@@ -38,8 +37,14 @@
     padding: 5px 30px 5px 0px;
     float: right;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Diphylleia', serif;
+    font-weight: bold;
+}
+
+#menu-cabeçalho li a:hover{
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 .container{
