@@ -1,102 +1,49 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
-header{
-    height: 13vh;
+.cabeçalho{
+    display: flex;
+    flex-direction: column;
+    color: white;
     background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-header > h1{
-    padding: 20px;
-    height: 30px;
+.cabeçalho h1{
+    padding: 10px 0px 0px 25px;
+    font-family: 'Diphylleia', serif;
+    font-size: 3em;
 }
 
-nav > ul{
-    display: flex;
-    list-style: none;
+#menu-cabeçalho li{
+    display: inline;
 }
 
-a{
-    display: flex;
-    color: white;
+#menu-cabeçalho li a{
+    padding: 5px 30px 5px 0px;
+    float: right;
     text-decoration: none;
-    padding: 60px 50px 0px 0px;
-    font-size: 1.3em;
+    color: white;
+    font-family: 'Diphylleia', serif;
 }
 
-a:hover{
+.container{
     display: flex;
-    color: blue;
-    text-decoration: none;
-    padding: 60px 50px 0px 0px;
-    font-size: 1.3em;
-}
-
-main{
-    height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.banner img{
-    height: 400px;
-    width: 1200px;
-}
-
-.banner{
-	background-image: url('imagens/mercado_jb_g.png');
-    width: 1200px;
-	background-size: contain;
-	background-position: top left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	color: #fff;
-}
-
-.produtos {
-	margin-top: 50px;
-}
-
-.produtos ul {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.produtos li {
-	margin-right: 20px;
-	margin-bottom: 20px;
-	flex-basis: calc(33.33% - 20px);
-}
-
-.produtos img {
-	display: block;
-	margin: 0 auto;
-}
-
-.produtos h3 {
-	margin-top: 10px;
-	font-size: 18px;
-}
-
-.produtos p {
-	margin-top: 10px;
-	font-size: 14px;
-}
-
-.produtos span {
-	display: block;
-	margin-top: 10px;
-	font-size: 16px;
-	font-weight: bold;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
