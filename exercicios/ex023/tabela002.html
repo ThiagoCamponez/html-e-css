@@ -8,6 +8,12 @@
         body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
 
         table{
             border-collapse: collapse;
@@ -33,19 +39,26 @@
 <body>
     <!-- Anatomia de Tabelas Grandes
         table
+            capition (legenda da tabela)
             thead
                 tr, td, th
             tbody
                 tr, td, th
             tfoot
                 tr, td, th
+            Obs.: Sempre que for um Título  usa th
+                  Sempre que for um Dado se usa td
+
+                  Quando usar o th, devera referenciar com o scope, no caso col pra referenciar que o Título da Coluna ou
+                  row para referenciar a linha.
     -->
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <td><strong>Estado</strong></td>
-                <td><strong>População</strong></td>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 115px;">População</th> <!-- Definindo o style="width: 115px" para o th População, no caso para o th Estado fica o resto de 385px que sobrou dos 500px informado no table-->
             </tr>
         </thead>
         <tbody>
@@ -156,7 +169,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes no Brasil</td>
+                <th scope="row">Total de Habitantes no Brasil</th>
                 <td class="num"><strong>207 883 729</strong></td>
             </tr>
         </tfoot>
