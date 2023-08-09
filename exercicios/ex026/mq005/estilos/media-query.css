@@ -18,8 +18,13 @@ Grandes telas: acima de 1200px
         display: block;
     }
 
-    menu {
-        display: 
+    menu > ul > li {
+        display: inline-block;
+        width: 100px;
+    }
+
+    main {
+        max-width: 768px;
     }
 
 }
