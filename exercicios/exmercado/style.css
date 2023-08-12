@@ -39,24 +39,29 @@
 
 #burguer {
     padding: 5px 10px;
+    cursor: pointer;
 }
 
-header > menu.categorias li{
-    display: inline;
+#categorias {
+    display: none;
 }
 
-#menu-cabeçalho li a{
-    padding: 5px 30px 5px 0px;
-    float: right;
+menu > ul > li > a {
+    display: block;
+    text-align: center;
+    height: 30px;
+    padding: 2px;
     text-decoration: none;
     color: black;
     font-family: 'Diphylleia', serif;
-    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-#menu-cabeçalho li a:hover{
-    color: white;
-    text-shadow: 2px 2px 4px black;
+menu > ul > li > a:hover {
+    background-color: #fcae65;
+    font-weight: bolder;
 }
 
 .produtos {

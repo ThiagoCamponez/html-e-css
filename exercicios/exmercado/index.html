@@ -11,7 +11,7 @@
 <body>
     <header class="cabeçalho">
         <h1>Mercado JB</h1>
-        <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="categorias">
             <ul>
                 <li><a href="#">Congelados</a></li>
@@ -60,14 +60,14 @@
     </footer>
     <script>
 
-        function clickmenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display == 'none'
+        function clickMenu() {
+            if (categorias.style.display == 'block') {
+                categorias.style.display = 'none'
             } else {
-                itens.style.display == 'block'
+                categorias.style.display = 'block'
             }
         }
-        
+
     </script>
 </body>
 </html>
