@@ -6,17 +6,21 @@
     <title>Mercado JB</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="cabeçalho">
         <h1>Mercado JB</h1>
-        <nav>
-            <ul id="menu-cabeçalho">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="cadprod.html">Cadastro Produtos</a></li>
-                <li><a href="login.html">login</a></li>
+        <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
+        <menu id="categorias">
+            <ul>
+                <li><a href="#">Congelados</a></li>
+                <li><a href="#">Frios e Laticínios</a></li>
+                <li><a href="#">Limpeza</a></li>
+                <li><a href="#">Higiene Pessoal</a></li>
+                <li><a href="#">Geral</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
     <main class="container">
         <section class="produtos">
@@ -54,5 +58,16 @@
 
         </p>
     </footer>
+    <script>
+
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display == 'none'
+            } else {
+                itens.style.display == 'block'
+            }
+        }
+        
+    </script>
 </body>
 </html>

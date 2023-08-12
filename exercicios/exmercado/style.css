@@ -14,6 +14,13 @@
     box-sizing: border-box;
 }
 
+.navbar-menu {
+    float: right;
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+
 .cabeçalho{
     display: flex;
     flex-direction: column;
@@ -30,7 +37,11 @@
     text-shadow: 1px 1px 2px rgb(175, 164, 164);
 }
 
-#menu-cabeçalho li{
+#burguer {
+    padding: 5px 10px;
+}
+
+header > menu.categorias li{
     display: inline;
 }
 
